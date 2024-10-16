@@ -1,0 +1,9 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+graphql:
+  playground:
+    enabled: true
+  packages:
+    - "example"

@@ -1,0 +1,50 @@
+### Configuration ###
+src/main/resources/application-local.yml
+
+### Transient files ###
+HELP.md
+.gradle
+build/
+reports/
+src/main/resources/truststore/**
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+.jib/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### Sonarqube ###
+.scannerwork/
+
+### GitLab CI/CD ###
+/*_tags.json
+
+.DS_Store
+.kotlin/**
