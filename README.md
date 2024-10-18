@@ -26,3 +26,12 @@ Consider renaming one of the beans or enabling overriding by setting spring.main
 ```txt
 Started ExampleApplicationKt in 1.634 seconds
 ```
+
+6. To test the working application, go to `http://localhost:8080/playground` and run the following query against the `http://localhost:8080/graphql` server:
+
+```
+query() {
+  exampleGet
+}
+```
+ 

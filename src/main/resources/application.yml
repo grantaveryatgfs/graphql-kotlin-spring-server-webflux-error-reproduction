@@ -3,7 +3,9 @@ spring:
     allow-bean-definition-overriding: true
 
 graphql:
+  endpoint: /graphql
   playground:
     enabled: true
   packages:
     - "example"
+
