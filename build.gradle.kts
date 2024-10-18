@@ -25,9 +25,30 @@ dependencies {
     implementation("org.springframework.boot:spring-boot")
     implementation("org.springframework.boot:spring-boot-starter-web")
 
-    // We only need WebTestClient in tests.
-    testImplementation("org.springframework:spring-webflux")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm")
 
     // TODO this is the source of the build failure:
-    implementation("com.expediagroup:graphql-kotlin-spring-server:8.0.0")
+    implementation("com.expediagroup:graphql-kotlin-spring-server:8.1.0")
+
+    implementation("com.graphql-java:graphql-java-extended-scalars:22.0")
+
+    // Additional libraries
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j")
+
+    // Spring Framework and Spring Boot.
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.boot:spring-boot-starter-aop")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
+
+    implementation("io.micrometer:micrometer-tracing-bridge-otel")
+    implementation("io.opentelemetry:opentelemetry-api-logs:1.26.0-alpha")
+
+    // OpenAPI.
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0")
+    implementation("org.springdoc:springdoc-openapi-starter-common:2.6.0")
+
+    // Only needed at runtime for the codegen to be able to run in CI.
+    runtimeOnly("com.h2database:h2:2.3.232")
 }
