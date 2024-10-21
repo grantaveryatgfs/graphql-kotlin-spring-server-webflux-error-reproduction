@@ -1,6 +1,9 @@
 # graphql-kotlin-spring-server-webflux-error-reproduction
 
-Reproduction steps:
+Created to reproduce the error reported in https://github.com/ExpediaGroup/graphql-kotlin/issues/2047 when using the `com.expediagroup:graphql-kotlin-spring-server:8.1.0` library with Spring WebMvc.
+
+## Reproduction steps
+
 1. Setup repo in IntelliJ IDEA with Java 21
 2. Run `./gradlew bootRun`
 3. See the exception:
